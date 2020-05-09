@@ -10,19 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2) do
-
-  create_table "costume_stores", force: :cascade do |t|
-    t.text "name"
-    t.text "location"
-    t.integer "costume_inventory"
-    t.integer "num_of_employees"
-    t.integer "still_in_business"
-    t.text "opening_time"
-    t.text "closing_time"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 1) do
 
   create_table "costumes", force: :cascade do |t|
     t.text "name"
